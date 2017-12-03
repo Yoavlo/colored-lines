@@ -1,0 +1,659 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tvColorLines"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#e30be3"
+            android:textSize="40sp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tvCurentScore"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvColorLines"
+            android:text="Curent Score"
+            android:textColor="#0b16e3"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tvMaxScore"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:text="Max Score"
+            android:textColor="#0b16e3"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvColorLines"
+            android:layout_alignParentLeft="true" />
+
+
+        <ImageView
+            android:id="@+id/imageviewleftball"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="33dp"
+            android:layout_toLeftOf="@+id/imageviewrightball"
+            android:src="@drawable/purpleboll" />
+
+        <ImageView
+            android:id="@+id/imageviewcenterball"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toLeftOf="@+id/imageviewrightball"
+            android:src="@drawable/yellowboll" />
+
+        <ImageView
+            android:id="@+id/imageviewrightball"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tvMaxScore"
+            android:src="@drawable/radboll" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/relativeLayout"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+
+            <com.comp13.colored_lines.GameButton
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btLayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btNewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btViewAllScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btExit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/button_exit"/>-->
+    </LinearLayout>
+</LinearLayout>
