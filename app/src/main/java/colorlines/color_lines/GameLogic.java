@@ -228,6 +228,7 @@ public class GameLogic {
             // if no-> the random location is NOT a empty cell,
             // thus we need a new random location. we do that by Recursion
             {
+                Log.i("getAvailableCells", "inside getAvailableCells");
                 //the program will go into side block if, the random location is empty.
 
                 Button button = getKeyByValue(DataManager.idAllCells, randomLocation);//gets the button key from the HashSet idAllCells by the value (randomLocation)
@@ -270,11 +271,10 @@ public class GameLogic {
 
     public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
         for (Map.Entry<T, E> entry : map.entrySet()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                if (Objects.equals(value, entry.getValue())) {
-                    return entry.getKey();
-                }
+            if (entry.getValue().equals(value)) {
+                return entry.getKey();
             }
+
         }
         return null;
     }
@@ -285,3 +285,4 @@ public class GameLogic {
     }
 
 }
+
